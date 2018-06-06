@@ -1,2 +1,2 @@
 # Group_Project
-KDD Analytical Group Project Sprint 2018
+KDD Analytical Group Project Spring 2018
