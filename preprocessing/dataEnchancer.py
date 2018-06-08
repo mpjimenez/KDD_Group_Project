@@ -1,3 +1,4 @@
+import time
 import pandas as pd
 from geopy.geocoders import GoogleV3
 
@@ -19,6 +20,9 @@ if __name__ == '__main__':
     for index, row in shootings_dataset.iterrows():
         location = row['city'] + ' ' + row['state']
 
+        # Sleep
+        time.sleep(5) # 3 Seconds
+
         # IF location in hashmap, append lat and long coords
         if location in city_coords:
             row['latitude'] = city_coords[location][0]
@@ -31,6 +35,7 @@ if __name__ == '__main__':
             row['latitude'] = latitude
             row['longitude'] = longitude
 
+            print('New Coord:', location, str(latitude), str(longitude))
 
     # Save new dataframe
     shootings_dataset.to_csv(SHOOTINGS_LATS_LONGS_DATASET)
