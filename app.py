@@ -11,7 +11,11 @@ if __name__ == '__main__':
     # Get dataset
     shootings_dataset = get_data()
     
-    # Get lat, lon of each (city, state) in dataset
+    '''
+    NOTE:
+        The method works for a slice of 3 'city name state' strings, but won't work for a list 
+        of every 'city name state' in dataset
+    '''
     get_geo_coords(shootings_dataset)
     sys.exit()
      
