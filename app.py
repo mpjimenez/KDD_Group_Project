@@ -16,9 +16,9 @@ if __name__ == '__main__':
         The method works for a slice of 3 'city name state' strings, but won't work for a list 
         of every 'city name state' in dataset
     '''
-    city_states = get_geo_coords(shootings_dataset)
-    print(city_states)
-    sys.exit()
+    #get_geo_coords(shootings_dataset)
+    #merge_coordinates()
+    
      
 
    
