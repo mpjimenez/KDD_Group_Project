@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="armed <= 29.5\ngini = 0.115\nsamples = 2463\nvalue = [2312, 151]"] ;
+1 [label="armed <= 16.5\ngini = 0.054\nsamples = 1465\nvalue = [1424, 41]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="state_pop <= 44.5\ngini = 0.401\nsamples = 54\nvalue = [39, 15]"] ;
+1 -> 2 ;
+3 [label="gini = 0.245\nsamples = 28\nvalue = [24, 4]"] ;
+2 -> 3 ;
+4 [label="gini = 0.488\nsamples = 26\nvalue = [15, 11]"] ;
+2 -> 4 ;
+5 [label="state <= 1.5\ngini = 0.036\nsamples = 1411\nvalue = [1385, 26]"] ;
+1 -> 5 ;
+6 [label="gini = 0.124\nsamples = 45\nvalue = [42, 3]"] ;
+5 -> 6 ;
+7 [label="gini = 0.033\nsamples = 1366\nvalue = [1343, 23]"] ;
+5 -> 7 ;
+8 [label="armed <= 72.5\ngini = 0.196\nsamples = 998\nvalue = [888, 110]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="city <= 541.0\ngini = 0.247\nsamples = 726\nvalue = [621, 105]"] ;
+8 -> 9 ;
+10 [label="gini = 0.174\nsamples = 228\nvalue = [206, 22]"] ;
+9 -> 10 ;
+11 [label="gini = 0.278\nsamples = 498\nvalue = [415, 83]"] ;
+9 -> 11 ;
+12 [label="city <= 100.0\ngini = 0.036\nsamples = 272\nvalue = [267, 5]"] ;
+8 -> 12 ;
+13 [label="gini = 0.208\nsamples = 17\nvalue = [15, 2]"] ;
+12 -> 13 ;
+14 [label="gini = 0.023\nsamples = 255\nvalue = [252, 3]"] ;
+12 -> 14 ;
+}
