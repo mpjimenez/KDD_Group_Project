@@ -7,6 +7,7 @@ import time
 import geocoder
 
 SHOOTINGS_DATASET = 'datasets/fatal-police-shootings-data.csv'
+FATAL_DATASET = 'datasets/fatal.csv'
 COORDINATES_PATH = 'datasets/city_coordinates.csv'
 COORDINATES_PATH1 = 'datasets/city_coordinates1.csv'
 COORDINATES_PATH2 = 'datasets/city_coordinates2.csv'
@@ -25,7 +26,10 @@ def get_data():
         shooting_dataset : Pandas Dataframe
     '''
     shootings_dataset = pd.read_csv(SHOOTINGS_DATASET)
-    return shootings_dataset
+    fatal = pd.read_csv(FATAL_DATASET)
+    print(fatal)
+    sys.exit()
+    return shootings_dataset, fatal
 
 def get_geo_coords(shootings_dataset):
     '''

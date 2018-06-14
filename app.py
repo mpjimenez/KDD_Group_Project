@@ -9,7 +9,7 @@ SHOOTINGS_LATS_LONGS_DATASET = '../datasets/fatal-police-shootings-with-coords.c
 if __name__ == '__main__':
 
     # Get dataset
-    shootings_dataset = get_data()
+    shootings_dataset, fatal = get_data()
     
     '''
     NOTE:
