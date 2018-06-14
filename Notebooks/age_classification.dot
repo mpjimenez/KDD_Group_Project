@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Ethnicity <= 1.5\ngini = 0.768\nsamples = 2463\nvalue = [124, 691, 788, 436, 289, 135]"] ;
+1 [label="Ethnicity <= 0.5\ngini = 0.783\nsamples = 1407\nvalue = [47, 296, 439, 286, 232, 107]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="armed <= 72.5\ngini = 0.725\nsamples = 240\nvalue = [6, 43, 107, 29, 37, 18]"] ;
+1 -> 2 ;
+3 [label="gini = 0.749\nsamples = 209\nvalue = [6, 37, 85, 27, 36, 18]"] ;
+2 -> 3 ;
+4 [label="gini = 0.454\nsamples = 31\nvalue = [0, 6, 22, 2, 1, 0]"] ;
+2 -> 4 ;
+5 [label="armed <= 28.5\ngini = 0.789\nsamples = 1167\nvalue = [41, 253, 332, 257, 195, 89]"] ;
+1 -> 5 ;
+6 [label="gini = 0.795\nsamples = 721\nvalue = [20, 134, 195, 160, 139, 73]"] ;
+5 -> 6 ;
+7 [label="gini = 0.768\nsamples = 446\nvalue = [21, 119, 137, 97, 56, 16]"] ;
+5 -> 7 ;
+8 [label="state_pop <= 44.5\ngini = 0.722\nsamples = 1056\nvalue = [77, 395, 349, 150, 57, 28]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="city <= 1690.5\ngini = 0.713\nsamples = 571\nvalue = [38, 233, 176, 75, 32, 17]"] ;
+8 -> 9 ;
+10 [label="gini = 0.715\nsamples = 555\nvalue = [38, 222, 175, 73, 31, 16]"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 16\nvalue = [0, 11, 1, 2, 1, 1]"] ;
+9 -> 11 ;
+12 [label="armed <= 71.5\ngini = 0.728\nsamples = 485\nvalue = [39, 162, 173, 75, 25, 11]"] ;
+8 -> 12 ;
+13 [label="gini = 0.732\nsamples = 381\nvalue = [30, 114, 142, 65, 22, 8]"] ;
+12 -> 13 ;
+14 [label="gini = 0.68\nsamples = 104\nvalue = [9, 48, 31, 10, 3, 3]"] ;
+12 -> 14 ;
+}
